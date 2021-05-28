@@ -10,7 +10,7 @@ apt install git -y
 
 #clone app from git
 cd ~
-git clone https://github.com/laravel/laravel.git myapp/
+git clone https://github.com/alitavakoli91/laravel-docker.git
 cd myapp/
 
 #run docker compose for installing app dependencies
@@ -20,7 +20,7 @@ docker run --rm -v $(pwd):/app composer install
 sudo chown -R $USER:$USER ~/myapp
 
 #Dockerizing the Laravel Project
-cd myapp/
+cd ~/myapp/
 docker-compose build
 docker-compose up -d
 docker-compose ps
