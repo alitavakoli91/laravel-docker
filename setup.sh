@@ -10,7 +10,7 @@ apt install git -y
 
 #clone app from git
 cd ~
-git clone https://github.com/alitavakoli91/laravel-docker.git
+git clone https://github.com/alitavakoli91/laravel-docker.git myapp/
 cd myapp/
 
 #run docker compose for installing app dependencies
